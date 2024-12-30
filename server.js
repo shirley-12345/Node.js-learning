@@ -20,7 +20,7 @@ const app = express();
 const userRoute = reuqire('./routes/users');
 const productsRoute = require('./routes/product');
 
-app.use('/users', sue);
+app.use('/users', userRoute);
 app.get('/', (req, res) => {
   res.send('Hello world');
 });
